@@ -1,5 +1,6 @@
 import React from "react";
 import PlayerCard from "./PlayerCard"; 
+import styled from "styled-components"; 
 
 class Fetch extends React.Component {
     constructor(props) {
@@ -24,13 +25,23 @@ class Fetch extends React.Component {
     }
     render() {
         return (
-            <div className="Fetch-Players">
+            <Div className="Fetch-Players">
                 {this.state.Players.map(Players => (
                 <PlayerCard key={this.state.Players.id} Players={Players} />
                 ))}
-            </div>
+            </Div>
             )
     }
 }
 
 export default Fetch; 
+
+
+const Div = styled.div`
+display: flex;
+flex-flow: wrap;
+width: 80%; 
+margin: 0 auto;
+justify-content: center;
+align-items: center;
+`

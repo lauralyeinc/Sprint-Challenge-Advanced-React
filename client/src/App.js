@@ -1,12 +1,14 @@
 import React from 'react';
-import './App.css';
+// import './App.css';
+import "./components/styles.scss"; 
 
 import Fetch from "./components/Fetch"; 
+import Nav from "./components/Nav"; 
 
 function App() { 
   return (
     <div className="App">
-    <h1> Woman's Word Cup</h1>
+    <Nav />
     <Fetch />
     </div>
   );

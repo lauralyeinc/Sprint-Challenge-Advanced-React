@@ -1,9 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
 import App from './App';
+import { render }  from "@test-library/react"; 
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+test ('renders without crashing', () => {
+  render(<App />)
 });
+
+test('should be true', () => {
+  expect
+})
