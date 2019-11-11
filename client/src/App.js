@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import Fetch from "./components/Fetch"; 
+
+function App() { 
   return (
     <div className="App">
     <h1> Woman's Word Cup</h1>
-    
+    <Fetch />
     </div>
   );
 }
