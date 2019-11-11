@@ -8,5 +8,10 @@ test ('renders without crashing', () => {
 });
 
 test('should be true', () => {
-  expect
-})
+  expect(true).toBe(true); 
+}); 
+
+test('contains header and toggle', () => {
+  const { getByText } = render(<App />);
+  getByText(/ Womens World Cup Players/i);
+}); 
